@@ -97,13 +97,30 @@ export default function Footer() {
 
           {/* Brand column */}
           <div style={{ gridColumn: 'span 2' }}>
-            <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', textDecoration: 'none', marginBottom: '20px' }}>
-              <div style={{ width: '34px', height: '34px', borderRadius: '10px', background: 'linear-gradient(135deg, #7c3aed, #4f46e5)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 16px rgba(124,58,237,0.4)' }}>
-                <Zap size={16} color="#fff" fill="#fff" />
+            <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', textDecoration: 'none', marginBottom: '10px' }}>
+              <div
+                style={{
+                  height: '60px',
+                  width: '180px',
+                  display: 'flex', alignItems: 'center', justifyContent: 'flex-start',
+                  marginLeft: '-22px',
+                }}
+              >
+                <img 
+                  src="/logo.png" 
+                  alt="Apex RN Prep Logo" 
+                  style={{ 
+                    width: '100%', 
+                    height: '100%', 
+                    objectFit: 'contain', 
+                    objectPosition: 'left center',
+                    mixBlendMode: 'screen',
+                    filter: 'contrast(1.8) brightness(1.2)', 
+                    transform: 'scale(1.6)', 
+                    transformOrigin: 'left center' 
+                  }} 
+                />
               </div>
-              <span style={{ fontSize: '1rem', fontWeight: 700, color: '#fff' }}>
-                Apex <span className="gradient-text">RN</span> Prep
-              </span>
             </Link>
             <p style={{ color: '#6b7280', fontSize: '13px', lineHeight: 1.7, maxWidth: '240px', marginBottom: '20px' }}>
               The most comprehensive NCLEX preparation platform trusted by 12,500+ nurses worldwide. Your success is our mission.
