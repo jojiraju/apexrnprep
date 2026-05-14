@@ -51,6 +51,7 @@ export default function FloatingContact() {
       </AnimatePresence>
 
       <motion.button
+        suppressHydrationWarning
         whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
         onClick={() => setOpen(!open)}
         className="animate-pulse-glow"

@@ -72,8 +72,9 @@ export default function Footer() {
               <p style={{ color: '#6b7280', fontSize: '14px' }}>Get weekly tips, practice questions, and study strategies — free.</p>
             </div>
             <form style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-              <input type="email" placeholder="Enter your email address" style={{ ...glassInput, minWidth: '240px', width: 'auto' }} />
+              <input suppressHydrationWarning type="email" placeholder="Enter your email address" style={{ ...glassInput, minWidth: '240px', width: 'auto' }} />
               <motion.button
+                suppressHydrationWarning
                 whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} type="submit"
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: '6px',
