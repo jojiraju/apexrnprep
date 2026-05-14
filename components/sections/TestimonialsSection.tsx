@@ -69,6 +69,7 @@ export default function TestimonialsSection() {
           {/* Navigation arrows */}
           <div className="flex items-center gap-3">
             <button
+              suppressHydrationWarning
               onClick={() => setCurrent((c) => Math.max(0, c - 1))}
               disabled={current === 0}
               className="w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 disabled:opacity-20 disabled:cursor-not-allowed hover:bg-violet-500/10 hover:border-violet-500/30 active:scale-95"
@@ -77,6 +78,7 @@ export default function TestimonialsSection() {
               <ChevronLeft size={20} style={{ color: current === 0 ? '#4b5563' : '#c4b5fd' }} />
             </button>
             <button
+              suppressHydrationWarning
               onClick={() => setCurrent((c) => Math.min(testimonials.length - visible, c + 1))}
               disabled={current >= testimonials.length - visible}
               className="w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 disabled:opacity-20 disabled:cursor-not-allowed hover:bg-violet-500/10 hover:border-violet-500/30 active:scale-95"
@@ -148,6 +150,7 @@ export default function TestimonialsSection() {
         <div className="flex justify-center gap-2 mt-8">
           {[...Array(testimonials.length - visible + 1)].map((_, i) => (
             <button
+              suppressHydrationWarning
               key={i}
               onClick={() => setCurrent(i)}
               className="rounded-full transition-all duration-300"

@@ -133,6 +133,7 @@ export default function Navbar() {
 
             {/* Mobile burger */}
             <button
+              suppressHydrationWarning
               onClick={() => setMobileOpen(!mobileOpen)}
               className="lg-hide"
               style={{

@@ -205,6 +205,7 @@ export default function HeroSection() {
 
               <motion.div whileHover={{ scale: 1.02, y: -1 }} whileTap={{ scale: 0.97 }}>
                 <button
+                  suppressHydrationWarning
                   className="inline-flex items-center gap-2.5 px-8 py-4 rounded-2xl font-semibold text-base text-white transition-all duration-300"
                   style={{
                     border: '1px solid rgba(139,92,246,0.35)',

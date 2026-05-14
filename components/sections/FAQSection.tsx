@@ -55,6 +55,7 @@ export default function FAQSection() {
               }}
             >
               <button
+                suppressHydrationWarning
                 onClick={() => setOpen(open === i ? null : i)}
                 className="w-full flex items-center justify-between gap-4 p-6 text-left group"
               >
