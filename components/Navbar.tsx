@@ -51,12 +51,12 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
               <motion.div
-                whileHover={{ scale: 1.02 }}
+                whileHover={{ scale: 1.05 }}
                 style={{
-                  height: '54px',
+                  height: '48px',
                   width: '140px',
                   display: 'flex', alignItems: 'center', justifyContent: 'flex-start',
-                  marginLeft: '-20px', // Pulls the container to the left to counteract image padding
+                  marginLeft: '-15px',
                 }}
               >
                 <img 
@@ -66,10 +66,10 @@ export default function Navbar() {
                     width: '100%', 
                     height: '100%', 
                     objectFit: 'contain', 
-                    objectPosition: 'left center', // Forces image to the left edge of container
+                    objectPosition: 'left center',
                     mixBlendMode: 'screen',
                     filter: 'contrast(1.8) brightness(1.2)', 
-                    transform: 'scale(1.6)', 
+                    transform: 'scale(1.4)', 
                     transformOrigin: 'left center' 
                   }} 
                 />
