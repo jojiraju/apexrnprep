@@ -2,14 +2,14 @@
 
 import { useRef } from 'react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { ArrowRight, Play, Star, CheckCircle, Zap, Shield, GraduationCap, Users } from 'lucide-react';
 import TextType from '@/components/ui/TextType';
 
 export default function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -17,12 +17,12 @@ export default function HeroSection() {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 40 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+      transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] as const },
     },
   };
 
@@ -255,7 +255,7 @@ export default function HeroSection() {
           <motion.div
             initial={{ opacity: 0, x: 60 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 1.1, delay: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
             className="relative hidden lg:block"
           >
             {/* Main card */}

@@ -59,7 +59,7 @@ export default function LearningProcess() {
                 initial={{ opacity: 0, x: i % 2 === 0 ? -50 : 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: '-60px' }}
-                transition={{ duration: 0.7, delay: 0.04 * i, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.7, delay: 0.04 * i, ease: [0.22, 1, 0.36, 1] as const }}
                 className={`relative flex items-center gap-8 ${i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}
               >
                 {/* Card */}

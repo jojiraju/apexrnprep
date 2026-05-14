@@ -30,7 +30,7 @@ export default function LoadingScreen() {
       {!done && (
         <motion.div
           exit={{ opacity: 0, scale: 1.04 }}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
           style={{
             position: 'fixed',
             inset: 0,

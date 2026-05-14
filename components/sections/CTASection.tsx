@@ -51,7 +51,7 @@ export default function CTASection() {
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] as const }}
           className="space-y-8"
         >
           {/* Logo icon */}
