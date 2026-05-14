@@ -78,7 +78,7 @@ export default function Footer() {
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: '6px',
                   padding: '12px 24px', borderRadius: '12px',
-                  background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
+                  background: 'var(--brand-gradient)',
                   color: '#fff', fontSize: '14px', fontWeight: 600,
                   border: 'none', cursor: 'pointer', whiteSpace: 'nowrap',
                   boxShadow: '0 4px 20px rgba(124,58,237,0.3)',

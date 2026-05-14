@@ -13,11 +13,13 @@
   --bg:       #06040e;
   --surface:  #0d0a1c;
   --surface2: #13102a;
+  --cyan:     #22d3ee;
   --violet:   #7c3aed;
   --indigo:   #4f46e5;
   --fuchsia:  #d946ef;
   --emerald:  #10b981;
   --amber:    #f59e0b;
+  --brand-gradient: linear-gradient(135deg, #22d3ee 0%, #7c3aed 100%);
 }
 
 /* ─────────────────────────────────────────────

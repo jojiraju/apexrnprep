@@ -33,7 +33,7 @@ export default function FloatingContact() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
               <Link href="/contact" style={{
                 display: 'block', textAlign: 'center', padding: '10px 16px', borderRadius: '12px',
-                background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
+                background: 'var(--brand-gradient)',
                 color: '#fff', fontSize: '13px', fontWeight: 600, textDecoration: 'none',
               }}>
                 Chat with Us
@@ -56,7 +56,7 @@ export default function FloatingContact() {
         className="animate-pulse-glow"
         style={{
           width: '56px', height: '56px', borderRadius: '50%',
-          background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
+          background: 'var(--brand-gradient)',
           display: 'flex', alignItems: 'center', justifyContent: 'center',
           color: '#fff', border: 'none', cursor: 'pointer',
           boxShadow: '0 8px 32px rgba(124,58,237,0.5)',

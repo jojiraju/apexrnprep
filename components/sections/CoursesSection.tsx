@@ -61,7 +61,7 @@ export default function CoursesSection() {
                   <span
                     className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-white text-xs font-bold"
                     style={{
-                      background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
+                    background: 'var(--brand-gradient)',
                       boxShadow: '0 4px 16px rgba(124,58,237,0.4)',
                     }}
                   >
@@ -134,7 +134,7 @@ export default function CoursesSection() {
                   href="/courses"
                   className="flex items-center gap-2 px-6 py-3 rounded-2xl text-sm font-bold transition-all duration-300 group/btn"
                   style={{
-                    background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
+                    background: 'var(--brand-gradient)',
                     color: '#fff',
                     boxShadow: '0 4px 15px rgba(124,58,237,0.3)',
                   }}
@@ -159,7 +159,7 @@ export default function CoursesSection() {
             href="/courses"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl text-white font-bold text-base"
             style={{
-              background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
+              background: 'var(--brand-gradient)',
               boxShadow: '0 8px 32px rgba(124,58,237,0.3)',
               transition: 'box-shadow 0.3s ease, transform 0.3s ease',
             }}

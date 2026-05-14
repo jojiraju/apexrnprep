@@ -59,7 +59,7 @@ export default function CTASection() {
             <div
               className="w-20 h-20 rounded-3xl flex items-center justify-center animate-pulse-glow"
               style={{
-                background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
+                  background: 'var(--brand-gradient)',
                 boxShadow: '0 16px 64px rgba(124,58,237,0.45)',
               }}
             >
@@ -84,7 +84,7 @@ export default function CTASection() {
                 href="/courses"
                 className="inline-flex items-center gap-2.5 px-10 py-5 rounded-2xl text-white font-bold text-lg"
                 style={{
-                  background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
+                    background: 'var(--brand-gradient)',
                   boxShadow: '0 8px 40px rgba(124,58,237,0.4)',
                 }}
               >

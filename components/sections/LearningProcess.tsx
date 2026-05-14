@@ -91,7 +91,7 @@ export default function LearningProcess() {
                 <div
                   className="hidden lg:flex w-12 h-12 rounded-full items-center justify-center shrink-0 z-10 text-white font-bold text-sm"
                   style={{
-                    background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
+                    background: 'var(--brand-gradient)',
                     boxShadow: '0 0 24px rgba(124,58,237,0.5)',
                   }}
                 >

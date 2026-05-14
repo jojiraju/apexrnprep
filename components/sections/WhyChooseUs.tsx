@@ -74,7 +74,7 @@ export default function WhyChooseUs() {
               >
                 <motion.div
                   className="h-full rounded-full"
-                  style={{ background: 'linear-gradient(90deg, #7c3aed, #4f46e5)' }}
+                  style={{ background: 'var(--brand-gradient)' }}
                   initial={{ width: 0 }}
                   whileInView={{ width: '97%' }}
                   viewport={{ once: true }}

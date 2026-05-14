@@ -194,7 +194,7 @@ export default function HeroSection() {
                   href="/courses"
                   className="inline-flex items-center gap-2.5 px-8 py-4 rounded-2xl font-bold text-base text-white"
                   style={{
-                    background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
+                    background: 'var(--brand-gradient)',
                     boxShadow: '0 8px 32px rgba(124,58,237,0.35)',
                   }}
                 >
@@ -281,7 +281,7 @@ export default function HeroSection() {
                   <div
                     className="w-12 h-12 rounded-2xl flex items-center justify-center"
                     style={{
-                      background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
+                      background: 'var(--brand-gradient)',
                       boxShadow: '0 8px 24px rgba(124,58,237,0.4)',
                     }}
                   >
@@ -325,7 +325,7 @@ export default function HeroSection() {
                       >
                         <motion.div
                           className="h-full rounded-full"
-                          style={{ background: 'linear-gradient(90deg, #7c3aed, #4f46e5)' }}
+                          style={{ background: 'var(--brand-gradient)' }}
                           initial={{ width: 0 }}
                           animate={{ width: `${pct}%` }}
                           transition={{ duration: 1.6, delay: 1.2, ease: 'easeOut' }}

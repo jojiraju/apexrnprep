@@ -120,7 +120,7 @@ export default function Navbar() {
                   style={{
                     display: 'inline-flex', alignItems: 'center', gap: '6px',
                     padding: '10px 20px', borderRadius: '12px',
-                    background: 'linear-gradient(135deg, #7c3aed, #4f46e5)',
+                    background: 'var(--brand-gradient)',
                     color: '#fff', fontSize: '14px', fontWeight: 600,
                     textDecoration: 'none',
                     boxShadow: '0 4px 20px rgba(124,58,237,0.35)',
