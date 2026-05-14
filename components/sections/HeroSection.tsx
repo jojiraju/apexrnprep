@@ -224,18 +224,19 @@ export default function HeroSection() {
 
             {/* Social proof */}
             <motion.div variants={itemVariants} className="flex items-center gap-4">
-              <div className="flex" style={{ gap: '-10px' }}>
-                {['#7c3aed', '#4f46e5', '#d946ef', '#14b8a6', '#f59e0b'].map((color, i) => (
+              <div className="flex -space-x-3">
+                {[
+                  'https://images.unsplash.com/photo-1559839734-2b71f1e3c770?q=80&w=150&h=150&auto=format&fit=crop',
+                  'https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=150&h=150&auto=format&fit=crop',
+                  'https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=150&h=150&auto=format&fit=crop',
+                  'https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=150&h=150&auto=format&fit=crop',
+                  'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=150&h=150&auto=format&fit=crop'
+                ].map((url, i) => (
                   <div
                     key={i}
-                    className="w-9 h-9 rounded-full flex items-center justify-center text-white text-xs font-bold"
-                    style={{
-                      background: color,
-                      border: '2px solid #06040e',
-                      marginLeft: i > 0 ? '-10px' : 0,
-                    }}
+                    className="w-10 h-10 rounded-full border-2 border-surface overflow-hidden bg-surface shadow-lg"
                   >
-                    {['S', 'J', 'M', 'P', 'A'][i]}
+                    <img src={url} alt={`Student ${i+1}`} className="w-full h-full object-cover" />
                   </div>
                 ))}
               </div>
@@ -402,9 +403,15 @@ export default function HeroSection() {
               >
                 <div className="flex items-center gap-3">
                    <div className="flex -space-x-2">
-                     {[1,2,3].map(i => (
-                       <div key={i} className="w-6 h-6 rounded-full border-2 border-surface bg-violet-600" />
-                     ))}
+                      {[
+                        'https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=80&h=80&auto=format&fit=crop',
+                        'https://images.unsplash.com/photo-1559839734-2b71f1e3c770?q=80&w=80&h=80&auto=format&fit=crop',
+                        'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=80&h=80&auto=format&fit=crop'
+                      ].map((url, i) => (
+                        <div key={i} className="w-7 h-7 rounded-full border-2 border-[#1a1636] overflow-hidden">
+                          <img src={url} alt="Student" className="w-full h-full object-cover" />
+                        </div>
+                      ))}
                    </div>
                    <span className="text-[10px] font-medium text-gray-400">Join +500 today</span>
                 </div>
